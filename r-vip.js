@@ -4,7 +4,7 @@
 
 [rewrite_local]
 #修改
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body r.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/kkwhf/Qx-backup/main/r-vip.js
 #清理
 ;^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js
 
@@ -182,13 +182,13 @@ if (typeof $response == "undefined") {
     'ImAFish':{ name: 'Pro', id: 'ProOver'},
     'GradientMusic':{ name: 'Pro', id: 'com.gradient.vision.new.music.one.time.79'},
     'streaks':{ name: 'patron', id: 'com.andyworks.streaks.yearlyPatron'},
-   // 'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：857848362
+    'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：857848362
     'Strides':{ name: 'plus', id: 'Annual'},
     'Summit_iOS':{ name: 'pro', id: 'Summit_Monthly1'},
     'PomoStiker':{ name: 'lifetimeForever', id: 'com.daya.lifetimeforever'},
     'Uio':{ name: 'PRO', id: 'com.daya.Uio.quarterly'},
     'Snipd':{ name: 'premium', id: 'snipd_premium_1y_7199_trial_2w_v2'},
-    //'Cuto':{ name: 'cutopro', id: 'com.potatsolab.cuto.pro'},
+    'Cuto':{ name: 'cutopro', id: 'com.potatsolab.cuto.pro'},
     'CountDuck':{ name: 'premium', id: 'Lifetime'},
     'tiimo':{ name: 'full_access', id: 'lifetime.iap'},
     'Subtrack':{ name: 'pro', id: 'com.mohitnandwani.subtrack.subtrackpro.family'},
