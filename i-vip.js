@@ -85,7 +85,7 @@ var uaProductMapping = {
   'Nutrilio': {product_id: 'net.nutrilio.one_year_plus'},
   'YSBrowser': {product_id: 'com.ys.pro'},
   '%E5%B0%8F%E6%97%A5%E5%B8%B8': {product_id: 'membership'},
-  'com.lotuz.PianoFantasy': {product_id: 'com.wms.hrv.pro'},  
+  'PianoFantasy': {product_id: 'com.wms.hrv.pro'},  
    'Miary': {product_id: 'lifetime_sub'},  
   'Mindkit': {product_id: 'mindkit_yearly'}, 
   'EnhanceFox': {product_id: 'com.risingcabbage.enhancefox.yearlysubscribewithtreetrial'},
