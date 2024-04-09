@@ -1,4 +1,4 @@
-#更新于2024/4/3
+#更新于2024/4/7
 # 练就去除更新
 ^https:\/\/api\.lianjiu\.fun\/app\/api\/v1\/version\/check url reject-200
 # 拼多多 
@@ -83,8 +83,7 @@ https://b.appsimg.com/upload/momin/ url reject
 ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ url script-analyze-echo-response https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js
 ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
 # > 钉钉
-^https:\/\/(gw|img)\.alicdn\.com\/imgextra\/.+\/[\w!]+\d+-\d+-.+-\b([8-9]\d{2,}|[1-9]\d{3,})\b-\b([5-9]\d{2,}|[1-9]\d{3,})\b url reject-dict
-;^https:\/\/gw\.alicdn\.com\/imgextra\/i4\/[\w!]+\d+-0-tps-1080- url reject-dict
+^https?:\/\/(gw|img)\.alicdn\.com\/imgextra\/.+\/[\w!]+\d+-\d+-.+-\b([8-9]\d{2,}|[1-9]\d{3,})\b-\b([5-9]\d{2,}|[1-9]\d{3,})\b url reject-dict
 # 58同城 //*.58cdn.com.cn, app.58.com, pic?.ajkimg.com
 ^https:\/\/app\.58\.com\/api\/home\/(advertising|appadv) url reject
 ^https:\/\/app\.58\.com\/api\/home\/invite\/popupAdv url reject
@@ -113,7 +112,7 @@ https://b.appsimg.com/upload/momin/ url reject
 ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) url reject-dict
-# 禁京东DNS解析 感谢@Eula分享
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=getWidgetV1052 url reject
 ;^https?:\/\/dns\.jd\.com\/ url reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(server|basic)Config url response-body "dnsvip"\:".+" response-body "dnsvip":""
 # 京东极速版 //api.m.jd.com
@@ -123,12 +122,23 @@ https://b.appsimg.com/upload/momin/ url reject
 ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
-# 美团 & 美团外卖//flowplus.meituan.net, img.meituan.net, s3plus.meituan.net
-^http:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? url reject-dict
-^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg url reject-dict
-^https:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg url reject-dict
-^https:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json url reject-dict
-^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ url reject-dict
+# hostname = img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com
+^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
+^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
+^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp url reject-200
+^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/ url reject
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 url reject-img
+^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\? url reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo\? url reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture url reject
+^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) url reject
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
+^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate? url reject
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject
+^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp url reject-img
+^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|mmc|wmbanner)\/ url reject
+# 美团订单详情页更多推荐
+^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject
 # 闲鱼 //gw.alicdn.com, acs.m.taobao.com
 ^https:\/\/gw\.alicdn\.com\/mt\/ url reject
 ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} url reject
@@ -145,11 +155,8 @@ https:\/\/idays-cdn\.2q10\.com\/app\/idays\/app_ad url reject
 https:\/\/app-cdn\.2q10\.com\/app\/idays\/honored url reject
 https:\/\/app-cdn\.2q10\.com\/app\/idays\/popups url reject-dict
 # 微信 //mp.weixin.qq.com
+^http:\/\/[\d\.]+(:49155)?\/finderpdd\.video\.qq\.com\/\d+\/\d+\/stodownload\? url reject-dict
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? url reject-dict
-^http:\/\/wxsnsdy\.wxs\.qq\.com\/\d+\/\d+\/snssvpdownload\/SH\/reserved\/ads_svp_video_ url reject-dict
-^http:\/\/[\d\.]+(:49155)?\/finderpdd\.video\.qq\.com\/\d+\/\d+\/stodownload\? url reject
-^http:\/\/wxsnsdythumb\.wxs\.qq\.com\/\d+\/\d+\/snscosdownload\/SZ\/reserved\/\w+ url reject-dict
-^http:\/\/finderv1\.video\.qq\.com\/\d+\/\d+\/stodownload\? url reject-dict
 # 微信封禁页面 //weixin110.qq.com, security.wechat.com
 ^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js
 # > 携程旅行 微信小程序净化
@@ -238,6 +245,12 @@ https:\/\/app-cdn\.2q10\.com\/app\/idays\/popups url reject-dict
 # 谷歌服务重定向 //*.google.cn
 ^https?:\/\/www\.google\.cn url 302 https://www.google.com
 ^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
+# 哔哩哔哩 //api.bilibili.com
+^https?:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp url reject-dict
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject-dict
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/(mine(\/ipad)?|myinfo)\? url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bilibili/json.js
+^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bilibili/json.js
 
-hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,flowplus.meituan.net, img.meituan.net, s3plus.meituan.net,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,idays-cdn.2q10.com,weixin110.qq.com,mp.weixin.qq.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,api.hellobike.com,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,*.cyapi.cn, api.caiyunapp.com,api.douban.com,boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com,*.google.cn
+
+hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,idays-cdn.2q10.com,weixin110.qq.com,mp.weixin.qq.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,api.hellobike.com,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,*.cyapi.cn, api.caiyunapp.com,api.douban.com,boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com,*.google.cn,api.bilibili.com
 
