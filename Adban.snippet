@@ -217,11 +217,11 @@ https://b.appsimg.com/upload/momin/ url reject
 # hostname = ad.12306.cn
 ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-analyze-echo-response https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js
 # 彩云天气 hostname = wrapper.cyapi.cn, api.caiyunapp.com
-^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url echo-response application/json echo-response https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json
-^https?:\/\/api\.caiyunapp\.com\/v1\/activity url reject-dict
-^https:\/\/biz\.cyapi\.cn\/p\/v1\/entries\? url reject-dict
-^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
-^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/homefeatures\? url reject-dict
+;^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url echo-response application/json echo-response https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json
+;^https?:\/\/api\.caiyunapp\.com\/v1\/activity url reject-dict
+;^https:\/\/biz\.cyapi\.cn\/p\/v1\/entries\? url reject-dict
+;^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+;^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/homefeatures\? url reject-dict
 # 豆瓣 //api.douban.com
 ^https:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject
 ^https:\/\/api\.douban\.com\b.*\/common_ads\? url reject
@@ -238,5 +238,5 @@ https://b.appsimg.com/upload/momin/ url reject
 ^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
 
 
-hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,api.hellobike.com,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,*.cyapi.cn, api.caiyunapp.com,api.douban.com,boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com,*.google.cn
+hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,api.hellobike.com,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,api.douban.com,boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com,*.google.cn
 
