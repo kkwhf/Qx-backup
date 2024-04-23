@@ -207,7 +207,8 @@ if (typeof $response == "undefined") {
     'Photon':{ name: 'photon.paid', id: 'photon.paid.yearly'},
 'ihabit':{ name: 'ihabit_subscription_pro', id: 'ihabit_year_payment_subscribe'},
     'reader':{name:'vip2',id:'com.valo.reader.vip2.year'},
-    
+    'FoJiCam':{name:'ProVersionLifeTime',id:'com.uzero.cn.fojicam.life2'},
+
     };
 
   const data = {
