@@ -92,7 +92,7 @@ var uaProductMapping = {
   'Snoring': {product_id: 'com.koshel.snore.premiumYearThreeDaysTria'},
   'com.brother.pdfreaderprofree': {product_id: 'com.pdfreaderpro.free.member.all_access_pack_permanent_license.001'},
   'com.chenxi.shanniankapian': {product_id: 'com.chenxi.shannian.superNian'},
-  
+   'WasteCat': {product_id: 'dev.sanjin.WasteCat.PermanentVip'},  
 
 
 
