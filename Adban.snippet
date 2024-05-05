@@ -8,7 +8,7 @@
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush url response-body pushData response-body ""
 ^https:\/\/img14\.360buyimg\.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/ url reject-200
 # > 建行生活
-# hostname = yunbusiness.ccb.com
+# hostname = yunbusiness.ccb.com, g.alicdn.com
 # 首页横幅广告
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(2|6|9) url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB04 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/ccbLifeAds.js
@@ -16,6 +16,8 @@
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05 url echo-response application/json echo-response https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/A3341AB05.json
 # 我的页面悬浮广告
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? url response-body "TAG_AD_INFO" response-body "TAG_AD_INFO0"
+# 内置饿了么外卖弹窗
+^https?:\/\/g\.alicdn\.com\/.*o2o-ad url script-response-body https://raw.githubusercontent.com/zirawell/app_remove_ads/main/All/js/alicdn.js
 # 顺丰速运+ 
 ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList url reject-dict
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo url reject-dict
@@ -208,7 +210,7 @@ https://b.appsimg.com/upload/momin/ url reject
 ^https:\/\/dynamicad\.kfc\.com\.cn\/api url reject-dict
 ^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/custom_v2\/wxapp url reject-dict
 ^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/activity url reject-dict
-# > 滴滴出行 微信小程序个人中心净化 由TEXAS和豆豆提供
+# > 滴滴出行 微信小程序
 # hostname = common.diditaxi.com.cn, conf.diditaxi.com.cn
 ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didi.js
 # > 滴滴打车 小程序净化 感谢#豆豆分享
@@ -225,18 +227,14 @@ https://b.appsimg.com/upload/momin/ url reject
 # 豆瓣 //api.douban.com
 ^https:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject
 ^https:\/\/api\.douban\.com\b.*\/common_ads\? url reject
-## 百度 //boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
-## 百度防跳转
-;^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduNoRedirect.js
-## 百度首页
-;^https:\/\/(www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js
-## 百度知道
-;^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-zhidao.js
-# 桌面端请使用 https://google.com/ncr
-# 谷歌服务重定向 //*.google.cn
-;^https?:\/\/www\.google\.cn url 302 https://www.google.com
-;^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
+# > Blued
+# hostname = social.blued.cn
+# 主页推荐直播 
+^https?:\/\/social\.blued\.cn\/users\/recommend url reject-dict
+# 未登录时个人界面广告
+^https?:\/\/social\.blued\.cn\/users\/no_auth\/benefit url reject-dict
+# 登录后个人界面广告
+^https?:\/\/social\.blued\.cn\/users\/.+\/more\/ios\?v=2 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/blued.js
 
-
-hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,api.douban.com
+hostname = api.pinduoduo.com, img14.360buyimg.com,yunbusiness.ccb.com,g.alicdn.com,mcs-mimp-web.sf-express.com, ucmp.sf-express.com,app.10099.com.cn,mbs.boc.cn,e.weather.com.cn,home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, hdgateway.zto.com, m.client.10010.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,mapi.appvipshop.com,ecapi.lkcoffee.com, capi.lkcoffee.com, m.lkcoffee.com,mea.meitudata.com,ad.12306.cn, mobile.12306.cn,gw.alicdn.com,*.58cdn.com.cn, app.58.com, pic?.ajkimg.com,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,api.m.jd.com,api.m.jd.com,api.coolapk.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,gw.alicdn.com, acs.m.taobao.com,wallet.95516.com,tiku.fenbi.com,m.ctrip.com,3pp.starbucks.com.cn,customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co,applets.jtexpress.com.cn,ump.ems.com.cn,www.deppon.com,webchatapp.fcbox.com,mystore-gw.watsonsvip.com.cn,htwkop.xiaojukeji.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,api.mcd.cn,orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn,common.diditaxi.com.cn, conf.diditaxi.com.cn,ad.12306.cn,api.douban.com,social.blued.cn
 
