@@ -157,7 +157,7 @@ if (typeof $response == "undefined") {
     'Math%20Makers':{ name: 'Subscriber', id: 'com.ululab.numbers.subscription_one_year_03'},
     'Happy%3ADays':{ name: 'pro', id: 'happy_999_lifetime'},
     'Thiro':{ name: 'pro', id: 'atelerix_pro_lifetime'},
-    'FTChatAI':{ name: 'pro', id: 'ft_ai_1799_1y'},
+    'No%20Fusion':{ name: 'LivePhoto', id: 'com.grey.livephoto.reference.price'},
     '%E7%A7%A9%E5%BA%8F%E7%9B%AE%E6%A0%87':{ name: 'pro', id: 'com.metaorder.OKRTomato.vip.supremacy'},
     'Zoomerang':{ name: 'pro', id: 'zoomerang.yearly'},
     'FastingForWoman':{ name: 'wefast_premium', id: 'wefast.yearlysubscription'},
