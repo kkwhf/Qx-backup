@@ -6,6 +6,6 @@ hostname = otter-api.codefuture.top
 */
 var kk = JSON.parse($response.body);
 kk.data.isVip = true; 
-kk.data.vipType=quarterly;
+kk.data.vipType=yearly;
 kk.data.vipDeadline ="9999-09-06T06:06:06Z";
 $done({ body: JSON.stringify(kk) });
