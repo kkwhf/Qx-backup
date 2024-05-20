@@ -1,6 +1,9 @@
 /*
  [rewrite_local]
 ^https?:\/\/otter-api\.codefuture\.top\/v1\/user\/current url script-response-body https://raw.githubusercontent.com/kkwhf/Qx-backup/main/Test.js
+^https?:\/\/otter-api\.codefuture\.top\/v1\/charge\/validate url script-response-body ""
+
+hostname = otter-api.codefuture.top
 [MITM]
 hostname = otter-api.codefuture.top
 */
