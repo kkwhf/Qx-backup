@@ -1,14 +1,13 @@
 /*
  [rewrite_local]
 ^https?:\/\/otter-api\.codefuture\.top\/v1\/user\/current url script-response-body https://raw.githubusercontent.com/kkwhf/Qx-backup/main/Test.js
-^https?:\/\/otter-api\.codefuture\.top\/v1\/charge\/validate url script-response-body ""
-
-hostname = otter-api.codefuture.top
 [MITM]
 hostname = otter-api.codefuture.top
 */
-var kk = JSON.parse($response.body);
-kk.data.isVip = true; 
-kk.data.vipType=monthly;
-kk.data.vipDeadline ="9999-09-06T06:06:06Z";
-$done({ body: JSON.stringify(kk) });
+if ($request.url.includes('v1/user/current')) {
+    let body = JSON.parse($response.body);
+    Object.assign(body.data, { isVip: "true", vipType: "monthly", vipDeadline: "9999-09-06T06:06:06Z" });
+    $done({ body: JSON.stringify(body) });
+} else {
+    $done({});
+}
