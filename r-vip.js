@@ -194,7 +194,7 @@ if (typeof $response == "undefined") {
     'Subtrack':{ name: 'pro', id: 'com.mohitnandwani.subtrack.subtrackpro.family'},
     'Aphrodite':{ name: 'all', id: 'com.ziheng.aphrodite.lifetime'},
     '%E7%94%BB%E5%8E%86':{ name: 'pro', id: 'com.bapaws.calendar.lifetime'},
-    'NotSmoke':{ name: 'not_smoke_vip_01', id: 'not_smoke_01_12_month'},
+    'ProCamera':{ id: 'com.cocologics.ProCamera.Up.Purchase1'},
     'Record2Text':{ name: 'afi.recnote.pro', id: 'afi.recnote.pro'},
     'MusicMate':{ name: 'premium', id: 'mm_lifetime_198_premium'},
     'Blurer':{ name: 'paid_access', id: 'pro_free'},
