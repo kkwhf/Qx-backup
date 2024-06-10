@@ -1,5 +1,5 @@
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
-# Update:20240520
+# Update:20240610
 
 # >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
 # > 12123
@@ -482,15 +482,15 @@
 
 # > 全民K歌
 # hostname = y.gtimg.cn
-;^https?:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/.+?\d{3,4}x\d{4} url reject-200
+^https?:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/.+?\d{3,4}x\d{4} url reject-200
 
 # >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > spotify
 # hostname = spclient.wg.spotify.com, api*.musical.ly
-;^https?:\/\/spclient\.wg\.spotify\.com\/(ad-logic|ads|.+ad_slot|.+banners|.+canvases|.+cards|.+crashlytics|.+doubleclick.net|.+enabled-tracks|.+event|.+sponsored|.+promoted|.+promoted_offer) url reject-img
-;^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/(ad-logic|ads|.+ad_slot|.+banners|.+canvases|.+cards|.+crashlytics|.+doubleclick.net|.+enabled-tracks|.+event|.+sponsored|.+promoted|.+promoted_offer) url reject-img
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ url reject-img
 
 # > Soul
 # hostname = 47.99.42.29, 47.97.215.55, 120.27.235.201, 47.110.187.87, ssp.soulapp.cn, 8.210.3.170, 47.75.72.47, api-account.soulapp.cn, api-global.soulapp.me, api-a.soulapp.cn, api-pay.soulapp.cn, gateway-mobile-gray.soulapp.cn, api-chat.soulapp.cn, post.soulapp.cn, api-user.soulapp.cn, api-account.soulapp.cn, ssp.soulapp.cn
@@ -670,4 +670,4 @@
 ;^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ url reject-200
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
-hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com, api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,tiku.fenbi.com,yunbusiness.ccb.com, g.alicdn.com,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,open-cms-api.uc.cn, open-cms-api.quark.cn,api.coolapk.com,res.kfc.com.cn,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,mea.meitudata.com,api.pinduoduo.com, api.yangkeduo.com, mobile.yangkeduo.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,wallet.95516.com, tysdk.95516.com, ads.95516.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn
+hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com, api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,tiku.fenbi.com,yunbusiness.ccb.com, g.alicdn.com,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,open-cms-api.uc.cn, open-cms-api.quark.cn,api.coolapk.com,res.kfc.com.cn,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,mea.meitudata.com,api.pinduoduo.com, api.yangkeduo.com, mobile.yangkeduo.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,wallet.95516.com, tysdk.95516.com, ads.95516.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn,y.gtimg.cn
