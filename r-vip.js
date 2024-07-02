@@ -193,7 +193,7 @@ if (typeof $response == "undefined") {
     'tiimo':{ name: 'full_access', id: 'lifetime.iap'},
     'Subtrack':{ name: 'pro', id: 'com.mohitnandwani.subtrack.subtrackpro.family'},
     'Aphrodite':{ name: 'all', id: 'com.ziheng.aphrodite.lifetime'},
-    '%E7%94%BB%E5%8E%86':{ name: 'pro', id: 'com.bapaws.calendar.lifetime'},
+    'ProCamera':{ id: 'com.cocologics.ProCamera.vividHDR001'},
     'ProCamera':{ id: 'com.cocologics.ProCamera.Up.Purchase1'},
     'Record2Text':{ name: 'afi.recnote.pro', id: 'afi.recnote.pro'},
     'MusicMate':{ name: 'premium', id: 'mm_lifetime_198_premium'},
