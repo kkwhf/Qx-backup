@@ -71,7 +71,7 @@ var uaProductMapping = {
   'Carbon%20VPN': {product_id: 'Prog_oneYear_auto'},
   'RealTuner': {product_id: 'com.gismart.tuner.weekly'},
   'ShellBean': {product_id: 'com.ningle.shellbean.subscription.year'},
-  'ProCamera': {product_id: 'com.cocologics.ProCamera.Up.Yearly',bundle_id: 'com.cocologics.ProCamera'},
+//  'ProCamera': {product_id: 'com.cocologics.ProCamera.Up.Yearly',bundle_id: 'com.cocologics.ProCamera'},
   //以下内容来自卑鄙的Baby
   'MomentShouZhang': {product_id: 'xichaoshouzhangQuarterlyPlus'},
   'XinQingRiJi': {product_id: 'zhiwenshouzhangQuarterlyPlus'},
