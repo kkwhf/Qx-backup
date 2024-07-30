@@ -28,5 +28,5 @@
 #keep课程预览 直播课。会员付费课跟练
 ^https?:\/\/(api|kit).gotokeep\.com\/(nuocha|gerudo|athena|nuocha\/plans)\/ url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/keep.js
 [mitm] 
-hostname = api.gotokeep.com, kad.gotokeep.com,kit.gotokeep.com
+hostname = *.gotokeep.com
 ;^http://example.com/resource1/4/ url reject-dict
