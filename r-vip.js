@@ -7,10 +7,10 @@
 ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/kkwhf/Qx-backup/main/r-vip.js
 #清理
 ;^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+/(offerings|attributes)$ url request-header (\r\n)X-RevenueCat-ETag:.+(\r\n) request-header $1X-RevenueCat-ETag:$2
-
+https://api.lianjiu.fun/app/api/v1/profile url reject
 
 [mitm] 
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com, api.lianjiu.fun
 
 ************************************/
 
@@ -208,7 +208,7 @@ if (typeof $response == "undefined") {
 'ihabit':{ name: 'ihabit_subscription_pro', id: 'ihabit_year_payment_subscribe'},
     'reader':{name:'vip2',id:'com.valo.reader.vip2.year'},
     'FoJiCam':{name:'ProVersionLifeTime',id:'com.uzero.cn.fojicam.life2'},
-
+'becoming':{ name: 'Strength Pro', id: 'strength_membership_monthly'},//练就
     };
 
   const data = {
