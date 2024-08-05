@@ -26,7 +26,7 @@ hostname=hc-ssp.sm.cn, api.gotokeep.com, 162.14.5.*,42.187.199.*,101.42.124.*, k
 # > 屏蔽更新
 ^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check url reject-200
 # > 我的页面去推广
-^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+#^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 # > 应用底部栏净化
 ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 # > 首页信息流去广告
