@@ -286,7 +286,7 @@
 # > 粉笔
 # hostname = tiku.fenbi.com
 # 开屏广告
-^https?:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/fenbi.js
+;^https?:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/fenbi.js
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
 # > 光大银行
@@ -358,7 +358,7 @@
 ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) url reject-dict
-  # 禁京东DNS解析
+# 禁京东DNS解析
 ^https?:\/\/dns\.jd\.com\/ url reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(server|basic)Config url response-body "dnsvip"\:".+" response-body "dnsvip":""
 # 禁京东直播小窗
@@ -388,14 +388,14 @@
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 # > 夸克
 # hostname = open-cms-api.uc.cn, open-cms-api.quark.cn
-^https?:\/\/open-cms-api\.(uc|quark)\.cn\/open-cms url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/quark.js
+;^https?:\/\/open-cms-api\.(uc|quark)\.cn\/open-cms url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/quark.js
 
 # > 酷安
 # hostname = api.coolapk.com
-^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
+;^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+;^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+;^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+;^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 
 # > 肯德基
 # hostname = res.kfc.com.cn
@@ -455,7 +455,7 @@
 # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
 # > 拼多多
 # hostname = api.pinduoduo.com, api.yangkeduo.com, mobile.yangkeduo.com
-^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash url reject
+;^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash url reject
 # 多多买菜
 ;^https?:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/express\/post\/waybill\/red_packet\/goods_list$ url response-body "list":\[.+\] response-body "list":[]
 
@@ -669,4 +669,4 @@
 ;^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ url reject-200
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
-hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com, api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,tiku.fenbi.com,yunbusiness.ccb.com, g.alicdn.com,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,open-cms-api.uc.cn, open-cms-api.quark.cn,api.coolapk.com,res.kfc.com.cn,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,mea.meitudata.com,api.pinduoduo.com, api.yangkeduo.com, mobile.yangkeduo.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,wallet.95516.com, tysdk.95516.com, ads.95516.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn,y.gtimg.cn
+hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com, api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,yunbusiness.ccb.com, g.alicdn.com,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,mea.meitudata.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,wallet.95516.com, tysdk.95516.com, ads.95516.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn,y.gtimg.cn
