@@ -3,7 +3,7 @@
 滴答
 
 [rewrite_local]
-https://dida365.com/api/v2/user/status url script-response-body ddqd.js
+https://dida365.com/api/v2/user/status url script-response-body https://raw.githubusercontent.com/kkwhf/Qx-backup/main/dida.js
 
 [mitm] 
 hostname = dida365.com
