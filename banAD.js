@@ -341,7 +341,7 @@
 # 首页横幅广告
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A(002|006|009|119|120) url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341C147 url reject-200
-^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB0(3|4) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/ccbLifeAds.js
+^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB03 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/ccbLifeAds.js
 # 删除首页+金融+我的多个横幅等乱七八糟的广告
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05 url echo-response application/json echo-response https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/A3341AB05.json
 # 我的页面悬浮广告
@@ -418,34 +418,21 @@
 # hostname = dispatcher.camera360.com
 ;^https?:\/\/dispatcher\.camera360\.com\/api\/v\d\/list$ url reject
 
-# > 美团
-# hostname = img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com
-^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject-200
-^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
-^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp url reject-200
-^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/ url reject
-^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 url reject-img
-^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\? url reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo\? url reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture url reject
-^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) url reject
-^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
-^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate? url reject
-^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp url reject-img
-^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|mmc|wmbanner)\/ url reject
-^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject
-
-# > 美团外卖
-# hostname = wmapi.meituan.com, img.meituan.net, s3plus.meituan.net
-;^https?:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? url reject-dict
-;^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg url reject-200
-;^https?:\/\/img\.meituan\.net\/(bizad|brandCpt)\/\w+\.(png|jpg) url reject
-;^https?:\/\/s3plus\.meituan\.net\/.*\/brandcpt-vedio\/.*\?time url reject
+# > 美团 & 美团外卖
+# hostname = img.meituan.net, s3plus.meituan.net, flowplus.meituan.net
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? url reject-dict
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject-dict
+^https?:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg url reject-dict
+^https?:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json url reject-dict
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ url reject-dict
+# 美团订单详情页更多推荐
+^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject-dict
 
 # > 美图秀秀
-# hostname = mea.meitudata.com
+# hostname = mea.meitudata.com, adui.tg.meitu.com
 ^https?:\/\/mea\.meitudata\.com\/kaiping url reject
+^https?:\/\/adui\.tg\.meitu\.com url reject-dict
+
 
 # >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
 # > 农业银行
@@ -602,7 +589,26 @@
 ;^https?:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info url reject-dict
 
 # > 闲鱼
-# hostname = gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com, acs.m.taobao.com
+# hostname = acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com
+# 拦截广告下发
+^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch %E9%97%B2%E9%B1%BC* url-and-header reject
+# 首页顶部标签
+^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/ url script-response-body https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js
+# 搜索栏填充词
+^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/ url script-response-body https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js
+# 首页闲鱼币入口、底部发布球
+^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/ url script-response-body https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js
+# 我的页面横幅
+^https:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ url reject
+# 商品信息流广告
+^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ url script-response-body https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js
+# 定位地区页面的信息流广告
+^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/ url script-response-body https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js
+# 搜索页面净化
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ url reject-dict
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ url reject-dict
+
+# hostname = gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com
 ^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ url reject-200
 ^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} url reject-200
 ^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$ url reject-200
@@ -613,15 +619,13 @@
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) url reject
 ^https?:\/\/gw\.alicdn\.com\/mt\/ url reject
 ^https?:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} url reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome url reject
-
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # > 云闪付
 # hostname = wallet.95516.com, tysdk.95516.com, ads.95516.com
 # 默认关闭,只使用分流去云闪付广告
-^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 url reject
-^https?:\/\/wallet\.95516\.com\/s\/wl\/icon\/long url reject
-^https?:\/\/(tysdk|ads)\.95516\.com url reject-dict
+#^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 url reject
+#^https?:\/\/wallet\.95516\.com\/s\/wl\/icon\/long url reject
+#^https?:\/\/(tysdk|ads)\.95516\.com url reject-dict
 
 # > 一淘
 # hostname = acs.m.taobao.com
@@ -673,4 +677,4 @@
 ;^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ url reject-200
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
-hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com,api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,yunbusiness.ccb.com, g.alicdn.com,waimai-guide.ele.me,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com,mea.meitudata.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,wallet.95516.com, tysdk.95516.com, ads.95516.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn,y.gtimg.cn
+hostname =acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,list-app-m.i4.cn,social.blued.cn,app.bilibili.com,api.bilibili.com,*.cyapi.cn, api.caiyunapp.com,gw.alicdn.com, img.alicdn.com,yunbusiness.ccb.com, g.alicdn.com,waimai-guide.ele.me,image1.ccb.com,api.m.jd.com, dns.jd.com,img11.360buyimg.com,m.360buyimg.com,bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, appconf.mail.163.com, support.you.163.com,img.meituan.net,mea.meitudata.com, adui.tg.meitu.com,acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com,ios.wps.cn, mobile-pic.cache.iciba.com,acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com,gw.alicdn.com, heic.alicdn.com, asp.cntv.myalicdn.com,mbs.boc.cn, mlife.jf365.boc.cn,app.10099.com.cn,y.gtimg.cn
