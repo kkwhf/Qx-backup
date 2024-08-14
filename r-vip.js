@@ -209,7 +209,9 @@ if (typeof $response == "undefined") {
     'reader':{name:'vip2',id:'com.valo.reader.vip2.year'},
     'FoJiCam':{name:'ProVersionLifeTime',id:'com.uzero.cn.fojicam.life2'},
 'becoming':{ name: 'Strength Pro', id: 'strength_membership_monthly'},//练就
-   'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：857848362
+   'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：app.gentler.activity.subscription.yearlyFamily2
+ 'gentler':{ name: 'premium', id: 'app.gentler.activity.subscription.yearlyFamily2'},
+
     };
 
   const data = {
