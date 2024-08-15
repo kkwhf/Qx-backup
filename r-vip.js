@@ -193,7 +193,8 @@ if (typeof $response == "undefined") {
     'tiimo':{ name: 'full_access', id: 'lifetime.iap'},
     'Subtrack':{ name: 'pro', id: 'com.mohitnandwani.subtrack.subtrackpro.family'},
     'Aphrodite':{ name: 'all', id: 'com.ziheng.aphrodite.lifetime'},
-    'ProCamera':{ name:'com.cocologics.ProCamera.vividHDR001',id: 'com.cocologics.ProCamera.Up.Purchase1'},
+    'ProCamera':{ name:'pro_camera_up_entitlement',id: 'com.cocologics.ProCamera.Up.Purchase1'},
+    'ProCamera':{ name:'vivid_hdr_entitlement',id: 'com.cocologics.ProCamera.vividHDR001'},
     'Record2Text':{ name: 'afi.recnote.pro', id: 'afi.recnote.pro'},
     'MusicMate':{ name: 'premium', id: 'mm_lifetime_198_premium'},
     'Blurer':{ name: 'paid_access', id: 'pro_free'},
@@ -207,7 +208,7 @@ if (typeof $response == "undefined") {
 'ihabit':{ name: 'ihabit_subscription_pro', id: 'ihabit_year_payment_subscribe'},
     'reader':{name:'vip2',id:'com.valo.reader.vip2.year'},
     'FoJiCam':{name:'ProVersionLifeTime',id:'com.uzero.cn.fojicam.life2'},
-'becoming':{ name: 'Strength Pro', id: 'strength_membership_monthly'},//练就
+    'becoming':{ name: 'Strength Pro', id: 'strength_membership_monthly'},//练就
    'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：app.gentler.activity.subscription.yearlyFamily2
  'gentler':{ name: 'premium', id: 'app.gentler.activity.subscription.yearlyFamily2'},
 
