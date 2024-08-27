@@ -74,7 +74,7 @@ if (typeof $response == "undefined") {
     'windiary':{ name: 'Pro', id: 'windiary_1799_lt'},
     'Liftbear':{ name: 'Pro', id: 'liftbear_2399_1y'},
     'Currency':{ name: 'plus', id: 'com.jeffreygrossman.currencyapp.iap.pro.crossgrade'},
-    //'APTV': { name: 'pro', id: 'com.kimen.aptvpro.lifetime' },
+    'AudioPlayer': { name: 'pro', id: 'xyz.lijun.www.AudioPlayer.vip.12' },
     'Photo%20Vault': { name: 'PRO', id: '2fa_0499_1y' },
     'Authenticator': { name: 'PRO', id: '2fa_0499_1y' },
     'PhotoRoom': { name: 'business', id: 'com.background.business.yearly' },
