@@ -211,6 +211,7 @@ if (typeof $response == "undefined") {
     'becoming':{ name: 'Strength Pro', id: 'strength_membership_monthly'},//练就
    'Grow':{ name: 'grow_pro', id: 'grow_lifetime'},//版本号：app.gentler.activity.subscription.yearlyFamily2
  'gentler':{ name: 'premium', id: 'app.gentler.activity.subscription.yearlyFamily2'},
+'FujiLifeStyle': { name: 'FUJIStyle Pro(Year)', id: 'FujiStyle2024003'},  //FUJISTYLE-富士康色彩配方
 
     };
 
