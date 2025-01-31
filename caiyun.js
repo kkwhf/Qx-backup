@@ -1,17 +1,7 @@
-
-***************************
-QuantumultX:
-
-[rewrite_local]
-^https:\/\/api\.polaxiong\.com\/v1\/payments\/(appleiap\/receipts\/confirmation|profiles\/@me\/subscription) url script-response-body https://raw.githubusercontent.com/kwypn/Reviewa/main/Pola.js
-
-[mitm]
-hostname = api.polaxiong.com
-
 ***************************
 Surge4 or Loon:
 [Script]
-http-response ^https:\/\/untech\.cc\/api\/users\/register-device requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/kwypn/Reviewa/main/Pola.js
+http-response ^https:\/\/untech\.cc\/api\/users\/register-device requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/kkwhf/Qx-backup/refs/heads/main/caiyun.js
 
 [MITM]
 hostname = untech.cc
