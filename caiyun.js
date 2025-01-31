@@ -13,43 +13,53 @@ const response = { status: statusCode, headers: $response.headers };
 
 if ($response.body && $request.url.includes("api/users/register-device")) {
   response.body = JSON.stringify({
-     "success": true,
-  "message": "已注册/更新",
-  "user": {
-    "address": "淇滨区",
-    "_id": "67979bd1175890f3440bb67e",
-    "location": {
-      "longitude": 114.31679801574958,
-      "latitude": 35.763270141522156
+     "success" : true,
+  "message" : "已注册\/更新",
+  "user" : {
+    "location" : {
+      "longitude" : 114.31661442220835,
+      "latitude" : 35.762915361491572
     },
-    "__v": 1,
-    "preferredTime": "07:30",
-    "lastUpdateTime": "2025-01-28T10:55:24.952Z",
-    "membershipExpires": true,
-    "pushEnabled": true,
-    "pushTypes": [],
-    "timeZone": "Asia/Shanghai",
-    "deviceToken": "203a9bfa584233e4cbf6c6c1b505e3611f16f1e6def6ea7221af173e50488b82"
+    "_id" : "679c6f84175890f3440e2794",
+    "address" : "淇滨区",
+    "__v" : 0,
+    "preferredTime" : "07:30",
+    "lastUpdateTime" : "2025-01-31T06:59:55.504Z",
+    "membershipExpires" : "2065-02-03T06:58:23.000Z",
+    "pushEnabled" : true,
+    "pushTypes" : [
+      "dailySummary",
+      "rainNotification"
+    ],
+    "timeZone" : "Asia\/Shanghai",
+    "deviceToken" : "e34e8649d385d32f0dcdd4787f44c16be3c40ec08ac222bed3331517425a15c1"
+  }
   });
 }
 
 if ($response.body && $request.url.includes("api/users/register-device")) {
   response.body = JSON.stringify({
-        "user": {
-    "address": "淇滨区",
-    "_id": "67979bd1175890f3440bb67e",
-    "location": {
-      "longitude": 114.31679801574958,
-      "latitude": 35.763270141522156
+         "success" : true,
+  "message" : "已注册\/更新",
+  "user" : {
+    "location" : {
+      "longitude" : 114.31661442220835,
+      "latitude" : 35.762915361491572
     },
-    "__v": 1,
-    "preferredTime": "07:30",
-    "lastUpdateTime": "2025-01-28T10:55:24.952Z",
-    "membershipExpires": true,
-    "pushEnabled": true,
-    "pushTypes": [],
-    "timeZone": "Asia/Shanghai",
-    "deviceToken": "203a9bfa584233e4cbf6c6c1b505e3611f16f1e6def6ea7221af173e50488b82"
+    "_id" : "679c6f84175890f3440e2794",
+    "address" : "淇滨区",
+    "__v" : 0,
+    "preferredTime" : "07:30",
+    "lastUpdateTime" : "2025-01-31T06:59:55.504Z",
+    "membershipExpires" : "2065-02-03T06:58:23.000Z",
+    "pushEnabled" : true,
+    "pushTypes" : [
+      "dailySummary",
+      "rainNotification"
+    ],
+    "timeZone" : "Asia\/Shanghai",
+    "deviceToken" : "e34e8649d385d32f0dcdd4787f44c16be3c40ec08ac222bed3331517425a15c1"
+  }
   });
 }
 
