@@ -1,4 +1,14 @@
-trojan=193.123.81.105:443, password=6884d714-d3c4-4b49-aa20-767ea92837d6, obfs=wss, obfs-host=icecream.955850.xyz, obfs-uri=/proxyip=193.123.81.105:443&proxyIP=null, tls-verification=false, fast-open=false, udp-relay=false, tag=AE1
+trojan=43.206.220.255:443, password=p0gcYaXnnqIyx6ajxFRClBeaeeCTOY8AY3ONCD9FyDapS33xAEacEwDxFjXp0a4ZgRSR3, over-tls=true, tls-verification=false, tls-host=huzzah.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 01
+
+trojan=52.69.249.182:28331, password=FaCEZEZq36XlIBaRly2O53S8zwaxeeKDNRxnDYlRexDOS3904YOFRz830xZ439N2TSCyj, over-tls=true, tls-verification=false, tls-host=mailbox.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 02
+
+trojan=43.207.112.226:443, password=8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC, over-tls=true, tls-verification=false, tls-host=terture.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 03
+trojan=154.17.31.167:28331, password=Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD, over-tls=true, tls-verification=false, tls-host=basket.homeofbrave.net, fast-open=false, udp-relay=false, tag=🐿️ United States 01
+
+trojan=154.17.21.41:18332, password=q8eDApT3ExAIX6SDK7pyexT9COyRXwuIclY0ZDaNF3p8ZAYCeSDA52BB2Z7w3zFlSa94z, over-tls=true, tls-verification=false, tls-host=bedsheet.homeofbrave.net, fast-open=false, udp-relay=false, tag=🐿️ United States 02
+
+trojan=154.17.30.58:28332, password=a5DnyYNIexIzS2Xg3YYlg9Ol0SgEpyCj5ZCSBanD88eOpwOC4aEzDyTjY0nxBDjzSaACSTqSE223C83, over-tls=true, tls-verification=false, tls-host=phooey.starspace.link, fast-open=false, udp-relay=false, tag=🐿️ United States 03
+
 trojan=193.123.81.105:443, password=6884d714-d3c4-4b49-aa20-767ea92837d6, obfs=wss, obfs-host=icecream.955850.xyz, obfs-uri=/proxyip=193.123.81.105:443&proxyIP=null, tls-verification=false, fast-open=false, udp-relay=false, tag=AE2
 trojan=212.183.88.194:443, password=6884d714-d3c4-4b49-aa20-767ea92837d6, obfs=wss, obfs-host=icecream.955850.xyz, obfs-uri=/proxyip=212.183.88.194:443&proxyIP=null, tls-verification=false, fast-open=false, udp-relay=false, tag=AT1
 trojan=212.183.88.172:443, password=6884d714-d3c4-4b49-aa20-767ea92837d6, obfs=wss, obfs-host=icecream.955850.xyz, obfs-uri=/proxyip=212.183.88.172:443&proxyIP=null, tls-verification=false, fast-open=false, udp-relay=false, tag=AT2
