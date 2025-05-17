@@ -1,34 +1,47 @@
 SG-01-F = shadowsocks, 54.169.34.76, 12578, encrypt-method = chacha20-ietf-poly1305, password = nouse
-trojan=43.206.220.255:443, password=p0gcYaXnnqIyx6ajxFRClBeaeeCTOY8AY3ONCD9FyDapS33xAEacEwDxFjXp0a4ZgRSR3, over-tls=true, tls-verification=false, tls-host=huzzah.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 01
-
-trojan=52.69.249.182:28331, password=FaCEZEZq36XlIBaRly2O53S8zwaxeeKDNRxnDYlRexDOS3904YOFRz830xZ439N2TSCyj, over-tls=true, tls-verification=false, tls-host=mailbox.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 02
-
-trojan=43.207.112.226:443, password=8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC, over-tls=true, tls-verification=false, tls-host=terture.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 03
-trojan=154.17.31.167:28331, password=Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD, over-tls=true, tls-verification=false, tls-host=basket.homeofbrave.net, fast-open=false, udp-relay=false, tag=🐿️ United States 01
-
-trojan=154.17.21.41:18332, password=q8eDApT3ExAIX6SDK7pyexT9COyRXwuIclY0ZDaNF3p8ZAYCeSDA52BB2Z7w3zFlSa94z, over-tls=true, tls-verification=false, tls-host=bedsheet.homeofbrave.net, fast-open=false, udp-relay=false, tag=🐿️ United States 02
-
-trojan=154.17.30.58:28332, password=a5DnyYNIexIzS2Xg3YYlg9Ol0SgEpyCj5ZCSBanD88eOpwOC4aEzDyTjY0nxBDjzSaACSTqSE223C83, over-tls=true, tls-verification=false, tls-host=phooey.starspace.link, fast-open=false, udp-relay=false, tag=🐿️ United States 03
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YmJjNjk3NS1lNDZkLTQyYTAtODJiZS03NjM2NTNiNGNkZDVAanAwMy5qc3Nzc3NzLmNvbTozNTIwNQ#%E6%97%A5%E6%9C%AC
-trojan=blessed-osprey.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Montreal Pro 4
-
-trojan=civil-ferret.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Virginia Pro 22
-
-trojan=polished-polliwog.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Ohio Pro 12
-
-trojan=infinite-goshawk.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Singapore Pro 1
-
-trojan=ruling-treefrog.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=New York Pro 1
-
-trojan=healthy-parrot.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Riga 2
-
-trojan=healthy-parrot.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Riga Pro 2
-
-trojan=eternal-terrier.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Los Angeles 3
-
-trojan=eternal-terrier.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Los Angeles Pro 3
-
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@hk.pro.bestvmr.com:10003?mux=1#Lv1 香港 HKT A2
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@hk.pro.bestvmr.com:10004?mux=1#Lv1 香港 HKT A3
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10006?mux=1#Lv1 日本 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10008?mux=1#Lv1 台湾 家宽 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10010?mux=1#Lv1 台湾 家宽 A3
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10012?mux=1#Lv1 台湾 家宽 A5
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@sg.pro.bestvmr.com:10013?mux=1#Lv1 新加坡 高速 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10015?mux=1#Lv1 韩国 高速 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10017?mux=1#Lv1 美国 解锁 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10019?mux=1#Lv1 日本 A3
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10020?mux=1#Lv1 新加坡 A3
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10022?mux=1#Lv2 美国 解锁 A3
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10024?mux=1#Lv1 VIP 俄罗斯 高速 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10026?mux=1#Lv2 VIP 澳大利亚 原生ip A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10027?mux=1#LV2 VIP 德国 高速 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10028?mux=1#Lv2 VIP 英国 高速 A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10029?mux=1#Lv2 印度 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10030?mux=1#Lv2 VIP 土耳其 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10031?mux=1#LV2 VIP 德国原生ip A2
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10032?mux=1#Lv2 VIP 意大利 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10033?mux=1#Lv2 VIP 马来西亚 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10034?mux=1#Lv2 VIP 印尼 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10035?mux=1#Lv2 VIP 越南 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10036?mux=1#Lv2 VIP 加拿大 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10037?mux=1#Lv2 英国 原生IP A2
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10038?mux=1#Lv2 菲律宾 原生ip A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10039?mux=1#Lv2 泰国 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10040?mux=1#Lv2 VIP 法国 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10041?mux=1#Lv2 爱沙尼亚 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10042?mux=1#Lv2 西班牙 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10043?mux=1#Lv2 巴西 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10044?mux=1#Lv2 巴基斯坦 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10045?mux=1#Lv2 匈牙利 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10046?mux=1#Lv2 乌克兰 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10047?mux=1#Lv2 南非 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@cm01.bestvmr.com:10048?mux=1#Lv2 芬兰 原生IP A1
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@hk.pro.bestvmr.com:10003?mux=1#Lv1 香港 HKT A6
+trojan://62ea0d19-a6fd-3fba-8aff-171d0c461b62@hk.pro.bestvmr.com:10004?mux=1#Lv1 香港 HKT A7
+trojan://@:?mux=1#AutoSelect
+trojan://@:?mux=1#GLOBAL
+trojan://@:?mux=1#RULE
+trojan://@:?mux=1#direct
+trojan://@:?mux=1#dns
 trojan=caring-teal.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=Riyadh Pro 1
 
 trojan=ethical-troll.marlin387.pics:443, password=3841194681870589952, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=London 2
