@@ -1,3 +1,4 @@
+SG-01-F = shadowsocks, 54.169.34.76, 12578, encrypt-method = chacha20-ietf-poly1305, password = nouse
 trojan=43.206.220.255:443, password=p0gcYaXnnqIyx6ajxFRClBeaeeCTOY8AY3ONCD9FyDapS33xAEacEwDxFjXp0a4ZgRSR3, over-tls=true, tls-verification=false, tls-host=huzzah.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 01
 
 trojan=52.69.249.182:28331, password=FaCEZEZq36XlIBaRly2O53S8zwaxeeKDNRxnDYlRexDOS3904YOFRz830xZ439N2TSCyj, over-tls=true, tls-verification=false, tls-host=mailbox.meijireform.com, fast-open=false, udp-relay=false, tag=🐿️ Japan 02
