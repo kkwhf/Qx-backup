@@ -1,6 +1,5 @@
 [Body Rewrite]
-http-response https://(hub|pluginhub)\.kelee\.one/list\.json "loon://import\?plugin=(https://kelee.one/Tool/Loon/Lpx/(.+).lpx)" "egern:///modules/new?url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule%3Ftype%3Dloon-plugin%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue%26pm%3D.%26sni%3D."
-
+http-response https://kelee.one/Tool/Loon/Lpx_list.json "loon://import\\?plugin=(https://kelee.one/Tool/Loon/Lpx/(.+?)\\.lpx)" "egern:///modules/new?name=$2&url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule%3Ftype%3Dloon-plugin%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue%26pm%3D.%26sni%3D."
 [Header Rewrite]
 # 清缓存头
 http-request https://(hub|pluginhub)\.kelee\.one/list\.json header-del if-none-match
