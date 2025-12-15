@@ -1,29 +1,16 @@
-socks5=47.239.18.254:1080, username=12345678, password=12345678, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.16.221:1080, username=12345678, password=12345678, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=43.100.108.223:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=43.100.108.220:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=43.100.108.224:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=43.100.108.222:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.0.8:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.105.135:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.113.246:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.134.180:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.142.122:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.147.190:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.147.84:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.155.179:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.158.45:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.158.189:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.159.125:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.159.70:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.162.206:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.162.1:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.164.128:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.164.100:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.172.228:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.172.214:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.245.121:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.50.223:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.239.69.212:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.242.149.99:888, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
-socks5=47.242.23.27:3060, username=123, password=123, fast-open=false, udp-relay=false, tag=🇭🇰 香港
+SS://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@hk.fastsoonlink.com:40000#HK.%E9%A6%99%E6%B8%AF
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@us.fastsoonlink.com:40001#US.%E7%BE%8E%E5%9B%BD
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@jp.fastsoonlink.com:40003#JP.%E6%97%A5%E6%9C%AC
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@sgp.fastsoonlink.com:40005#SGP.%E6%96%B0%E5%8A%A0%E5%9D%A1
+SS://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZj dlZWE4NDA@ml.fastsoonlink.com:40006#MY.%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A
+SS://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZj dlZWE4NDA@frk.fastsoonlink.com:40011#AU.%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@th.fastsoonlink.com:40009#TH.%E6%B3%B0%E5%9B%BD
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@tw.fastsoonlink.com:40020#TW.%E5%8F%B0%E6%B9%BE
+SS://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206TnpsbFlqbGtPR0UyTVdNeFkyRXdaV1V3Tm1Oa1pqTXdOakV5WkdKak1qWT06TldKa 01EbGhPR010WkROaVpDMDBZbUppTFRreFlqZ3ROVFk0WkdZM1pXVT0@vn.fastsoonlink.com:40021#VN.%E8%B6%8A%E5%8D%97
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@tur.fastsoonlink.com:40019#TR.%E5%9C%9F%E8%80%B3%E5%85%B6
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@uk.fastsoonlink.com:40008#UK.%E8%8B%B1%E5%9B%BD
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@pr.fastsoonlink.com:40030#PL.%E6%B3%A2%E5%85%B0
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@ru.fastsoonlink.com:40031#RU.%E4%BF%84%E7%BD%97%E6%96%AF
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@kr.fastsoonlink.com:40032#KR.%E9%9F%A9%E5%9B%BD
+SS://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE 4NDA@idn.fastsoonlink.com:40033#IDN.%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YmQwOWE4Yy1kM2JkLTRiYmItOTFiOC01NjhkZjdlZWE4NDA@fr.fastsoonlink.com:40034#FR.%E6%B3%95%E5%9B%BD
