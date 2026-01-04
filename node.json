@@ -1,3 +1,20 @@
+proxies:
+  - {name: 🇭🇰 HK.香港, server: hk.fastsoonlink.com, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇺🇸 US.美国, server: us.fastsoonlink.com, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇯🇵 JP.日本, server: jp.fastsoonlink.com, port: 40003, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇸🇬 SGP.新加坡, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇲🇾 MY.马来西亚, server: ml.fastsoonlink.com, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇦🇺 AU.澳大利亚, server: frk.fastsoonlink.com, port: 40011, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇹🇭 TH.泰国, server: th.fastsoonlink.com, port: 40009, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇨🇳 TW.台湾, server: tw.fastsoonlink.com, port: 40020, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇻🇳 VN.越南, server: vn.fastsoonlink.com, port: 40021, type: ss, cipher: 2022-blake3-aes-256-gcm, password: NzllYjlkOGE2MWMxY2EwZWUwNmNkZjMwNjEyZGJjMjY=:NTc0RjQ2NjUtNzM2RS00MEZGLUIyQzctMTYwOTVGOUI=}
+  - {name: 🇹🇷 TR.土耳其, server: tur.fastsoonlink.com, port: 40019, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇬🇧 UK.英国, server: uk.fastsoonlink.com, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇵🇱 PL.波兰, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇷🇺 RU.俄罗斯, server: ru.fastsoonlink.com, port: 40031, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇰🇷 KR.韩国, server: kr.fastsoonlink.com, port: 40032, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇮🇩 IDN.印度尼西亚, server: idn.fastsoonlink.com, port: 40033, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
+  - {name: 🇫🇷 FR.法国, server: fr.fastsoonlink.com, port: 40034, type: ss, cipher: chacha20-ietf-poly1305, password: 574F4665-736E-40FF-B2C7-16095F9BE8E9}
 wg://118.107.244.107:41266?publicKey=SXNN1uo4xfOCrkmlhgyEXHbYOof74RoOL3fu2zApOSU=&privateKey=uFY+G9pPWpUE8QrWv6J4/+9fbzpMHO+UaZ2TQmctj1E=&ip=10.0.8.44/16,fd10:10:10:0:10:0:8:44/64&mtu=1420&udp=1#HK-%E8%B6%85%E5%A4%A7%E5%B8%A6%E5%AE%BDVIP1
 wg://118.107.244.107:41266?publicKey=SXNN1uo4xfOCrkmlhgyEXHbYOof74RoOL3fu2zApOSU=&privateKey=+L3gQdhj2GwGQw82N1O8tCnSgk5ubdtULM9U7cEon2k=&ip=10.0.11.52/16,fd10:10:10:0:10:0:11:52/64&mtu=1420&udp=1#HK-%E8%B6%85%E5%A4%A7%E5%B8%A6%E5%AE%BDVIP2
 wg://[2001:df0:fbc0:4::4]:38385?publicKey=SXNN1uo4xfOCrkmlhgyEXHbYOof74RoOL3fu2zApOSU=&privateKey=mAuVgwaEt2irxhMlh19dIuCeSoTU5GvaQFxC7FGJBW4=&ip=10.0.2.224/16,fd10:10:10:0:10:0:2:224/64&mtu=1420&udp=1#%5BIPv6%5DHK-%E8%B6%85%E5%A4%A7%E5%B8%A6%E5%AE%BDVIP3
