@@ -14,3 +14,4 @@ ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNUAyMTIuMTkyLjE1LjU5OjYwMTI5#HongKong
 ss://YWVzLTI1Ni1nY206OWNhMjgwM2MxNmRlNzJjZEAxOTUuMTMzLjUuMjEzOjIwMjE5#Russia
 ss://YWVzLTI1Ni1nY206MDY5MDY1OTc0Njk4MGM0NkAxNjcuMTcuMTc5LjE5NzoyMDI5MQ#Japan
 ss://YWVzLTI1Ni1nY206OWNhMjgwM2MxNmRlNzJjZEAxOTUuMTMzLjUuMjEzOjIwMjE5#Russia
+vmess-out = vmess, 210.13.85.170, 24450, username=104a1d19-c87b-3e01-84de-4e11976bee37, ws=true, tls=false, ws-path=/orbitrelay
