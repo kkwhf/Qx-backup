@@ -1,0 +1,7 @@
+
+[Script]
+PingMe获取签到参数 = type=http-request, pattern=^https:\/\/api\.pingmeapp\.net\/app\/queryBalanceAndBonus, script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60
+PingMe签到 = type=cron,cronexp=30 8,20 * * * ,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PingMe/PingMeSignin.js,timeout=300,script-update-interval=0
+
+[MITM]
+hostname = api.pingmeapp.net
